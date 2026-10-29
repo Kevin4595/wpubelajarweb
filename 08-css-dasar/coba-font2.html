@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba CSS - Font Styling</title>
+    <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Trad:wght@100..400&family=Tiny5+Duo:ital,wght@0,100..900;1,100..900&display=swap');
+    
+    @font-face {
+        font-family: Zeyada;
+        src: url('fonts/Zeyada-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-size: normal;
+        font-display: swap;
+    }
+
+        h1 {
+            color: crimson;
+            font-size: 60px;
+            text-align: center;
+            font-family: "Playwrite IT Trad", sans-serif;
+            font-weight: 300;
+        }
+
+        p {
+            color: navy;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Tiny5 Duo",Arial, Helvetica, sans-serif;
+        }
+
+        .font-zeyada {
+            font-family: Zeyada, arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit molestiae distinctio veniam alias facilis amet eum beatae totam voluptatum incidunt.</p>
+    <p class="font-zeyada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusamus aperiam nihil laborum doloremque dignissimos, libero, molestias impedit sint reprehenderit voluptas tempore minus harum assumenda ratione qui. Praesentium, asperiores a!</p>
+</body>
+
+</html>
