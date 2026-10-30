@@ -4,6 +4,125 @@
 <head>
   <meta charset="UTF-8">
   <title>Latihan Pseudo-classes Part 1</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .link-demo:link {
+      color: royalblue;
+    }
+
+    .link-demo:visited {
+      color: salmon;
+    }
+
+    .btn {
+      background-color: orange;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: darkorange;
+    }
+
+    .btn:active {
+      background-color: orangered;
+      transform: scale(0.95);
+    }
+
+    input:focus {
+      background-color: lightyellow;
+      border: 2px solid orange;
+      outline: none;
+    }
+
+    .target-box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-top: 10px;
+    }
+
+    .target-box:target {
+      background-color: lightgreen;
+      border: 2px solid green;
+      color: darkgreen;
+      font-weight: bold;
+    }
+
+    input:disabled {
+      background-color: #eee;
+      cursor: not-allowed;
+    }
+
+    input:enabled {
+      border: 1px solid #aaa;
+    }
+
+    input[type="checkbox"]:checked+label {
+      color: green;
+      font-weight: bold;
+      text-decoration: line-through;
+    }
+
+    .input-email {
+      border: 2px solid #ccc;
+      padding: 5px;
+    }
+
+    .input-email:invalid {
+      border-color: red;
+      background-color: #ffe6e6;
+    }
+
+    .input-email:valid {
+      border-color: green;
+      background-color: #e6ffe6;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    li:first-child {
+      background-color: #333;
+      color: white;
+    }
+
+    li:nth-child(even) {
+      background-color: salmon;
+    }
+
+    li:last-child {
+      background-color: #eee;
+    }
+
+    li:nth-child(3) {
+      background-color: lightgreen;
+    }
+
+    .kotak-kosong {
+      width: 100px;
+      height: 50px;
+      background-color: crimson;
+      margin-bottom: 20px;
+    }
+
+    .kotak-kosong:empty {
+      background-color: salmon;
+    }
+  </style>
 </head>
 
 <body>
