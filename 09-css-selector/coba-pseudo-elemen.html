@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Latihan Pseudo-elements Part 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Pseudo-elements part 2</title>
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +25,7 @@
     }
 
     .materi-baru::after {
-      content: " [BARU]";
+      content: " (NEW)";
       color: red;
       font-size: 0.5em;
       font-weight: bold;
@@ -41,13 +42,13 @@
 
     .kutipan-keren::before,
     .kutipan-keren::after {
-      content: "❝ ";
+      content: "“ ";
       color: darkorange;
       font-size: 1.5em;
     }
 
     .kutipan-keren::after {
-      content: " ❞";
+      content: " ”";
     }
 
     .artikel-wpu {
@@ -73,6 +74,7 @@
 
     .artikel-wpu::selection {
       background-color: darkorange;
+      color: white;
     }
 
     .input-pencarian {
@@ -136,7 +138,6 @@
   <form>
     <input type="text" class="input-pencarian" placeholder="Cari video tutorial WPU di sini...">
   </form>
-
 </body>
 
 </html>
